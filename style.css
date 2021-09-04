@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Vollkorn, Helvetica, Arial, sans-serif;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none;
+}
+.my-logo {
+  height: 90px;
+}
+menu {
+  width: 100%;
+  height: 60vh;
+  background: url("./imgs/joey-kyber-GPxgi4J82E4-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 10vh;
+  border-bottom: 1px solid white;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  /* filter: blur(1px);  */
+}
+
+.logo {
+  flex: 1;
+  /* background-color: rgb(17, 36, 36); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.nav-links {
+  border-bottom: 1px solid white;
+
+  flex: 1;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+ul.nav-links li a {
+  padding: 0px 10px;
+  color: white;
+}
+
+#toggle {
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  width: 60px;
+  height: 60px;
+  /* background-color: aquamarine; */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+#toggle::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  transform: translateY(-5px);
+  transition: 0.2s;
+}
+#toggle::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #fff;
+  transform: translateY(5px);
+  transition: 0.2s;
+}
+#toggle.active::before {
+  transform: translateY(0px) rotate(45deg);
+}
+#toggle.active::after {
+  transform: translateY(0px) rotate(-45deg);
+}
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background: #003147;
+  transition: 0.5s;
+  z-index: 1;
+}
+#sidebar.active {
+  left: 0px;
+}
+#sidebar ul {
+  position: relative;
+  margin-top: 50px;
+}
+#sidebar ul li {
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 40px;
+}
+#sidebar ul li:hover {
+  background-color: #03a9f4;
+}
+#sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+/* .hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 9px 0;
+  border-radius: 5px;
+} */
+.menu-pos {
+  position: absolute;
+  left: 100px;
+  top: 10px;
+}
+.content {
+  color: white;
+  /* background-color: aqua; */
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content h1 {
+  font-size: 3.3rem;
+  font-feature-settings: "liga", "dlig";
+}
+section {
+  padding: 40px 0px;
+  min-height: 100vh;
+  background: #2d767f;
+}
+
+/* ASIDE */
+
+aside {
+  padding: 100px 0px;
+  color: wheat;
+  background-color: black;
+  width: 0px;
+  /* height: 200px; */
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  text-align: center;
+}
+
+/* ASIDE */
+
+/* footer */
+.footer {
+  width: 100%;
+  min-height: 70vh;
+  background-color: #3e3636;
+}
+.footer ul li a p {
+  color: white;
+}
+
+.footer_a ul li {
+  padding: 10px;
+}

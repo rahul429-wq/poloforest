@@ -1,0 +1,19 @@
+.card {
+  margin-bottom: 20px;
+  width: 100%;
+  min-height: 40vh;
+  background-color: white;
+  border-radius: 10px 10px 0px 10px;
+  overflow: hidden;
+}
+.card-img {
+  object-fit: cover;
+}
+.cardimg {
+  width: 100%;
+  min-height: 30vh;
+  object-fit: cover;
+}
+.card-title {
+  padding: 10px;
+}
