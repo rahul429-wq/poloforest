@@ -1,10 +1,24 @@
+html,
+body {
+  scroll-behavior: smooth;
+  transition: 0.2s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Vollkorn, Helvetica, Arial, sans-serif;
 }
-
+.para {
+  background-color: rgba(245, 245, 246, 0.1);
+  color: whitesmoke;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  padding-top: 80px;
+  border-radius: 10px 10px 90px 10px;
+}
 ul,
 li,
 a {
@@ -164,6 +178,9 @@ section {
   padding: 40px 0px;
   min-height: 100vh;
   background: #2d767f;
+}
+section.sec-1 {
+  /* background-color: red; */
 }
 
 /* ASIDE */
